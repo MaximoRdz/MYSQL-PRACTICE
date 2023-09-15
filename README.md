@@ -1,5 +1,5 @@
 ## Table of Contents
-
+1. [`twitter_db.sql`](https://github.com/MaximoRdz/MYSQL-PRACTICE/blob/main/twitter_db.sql)
 ### SQL Brief Summary
 
 

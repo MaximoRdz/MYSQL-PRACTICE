@@ -41,13 +41,19 @@ SQL is a language used for a database to query data. Insert, select, update and 
 	|NOT IN (…)|String does not exist in a list|col_name NOT IN ("D", "E", "F")|
 
 1. Built-in database functions
-	1. `count(column)`: Retrieves the number of rows matching the query criteria
+	1. `COUNT(column)`: Retrieves the number of rows matching the query criteria
 	2. `DISTINCT`: Removes duplicate values from a result set
 	3. `LIMIT`: Restricts the number of rows retrieved from the database
 	4. `OFFSET`: Used together with `LIMIT` to specify where to begin counting the number rows from
+1. Ordering Results
+	```sql
+	SELECT column1, column2, … 
+	FROM mytable 
+	WHERE condition(s)
+	ORDER BY column ASC/DESC;
+	```
 
-
-
+#### INSERT
 
 ### References 
 - [SQL Bolt](https://sqlbolt.com/): Interactive well explained SQL fundamental lessons.

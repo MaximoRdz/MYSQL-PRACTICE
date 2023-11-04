@@ -3,8 +3,6 @@
 ### SQL Brief Summary
 SQL is a language used for a database to query data. Insert, select, update and delete data from the table are the building blocks of SQL.
 **RDBMS** (Relational DataBase Managements Systems): Software tool that controls the data (i.e. MySQL).
-
----
 #### SELECT
 ---
 1. Simple Queries
@@ -55,7 +53,6 @@ SQL is a language used for a database to query data. Insert, select, update and 
 	WHERE condition(s)
 	ORDER BY column ASC/DESC;
 	```
----
 #### INSERT
 ---
 ### References 

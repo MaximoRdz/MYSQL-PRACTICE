@@ -48,13 +48,44 @@ SQL is a language used for a database to query data. Insert, select, update and 
 	4. `OFFSET`: Used together with `LIMIT` to specify where to begin counting the number rows from
 1. Ordering Results
 	```sql
-	SELECT column1, column2, … 
+	SELECT column1, column2, ...
 	FROM mytable 
 	WHERE condition(s)
 	ORDER BY column ASC/DESC;
 	```
 #### INSERT
 ---
+INSERT statements declare which table to write into, the columns of data that we are filling, and one or more rows of data to insert.
+```sql
+INSERT INTO mytable 
+VALUES (value_or_expr, another_value_or_expr, ...), 
+		(value_or_expr_2, another_value_or_expr_2, ...), 
+		...;
+```
+In case you have incomplete data and the table contains columns that support default values, you can insert rows with only the columns of data you specify explicitly
+```sql
+INSERT INTO mytable 
+(column_1, column_2, ...)
+VALUES (value_or_expr, another_value_or_expr, ...), 
+		(value_or_expr_2, another_value_or_expr_2, ...),
+		 ...;
+```
+#### UPDATE
+---
+You have to specify exactly which table, columns and rows to update.
+```sql
+UPDATE mytable 
+SET column = value_or_expr, 
+	other_column = another_value_or_expr, 
+	...
+ WHERE condition;
+```
+#### DELETE
+---
+```sql
+DELETE FROM mytable
+WHERE condition;
+```
 ### References 
 - [SQL Bolt](https://sqlbolt.com/): Interactive well explained SQL fundamental lessons.
 - [Advance DB Creation](https://www.youtube.com/watch?v=96s2i-H7e0w): MySQL database creation example. 
